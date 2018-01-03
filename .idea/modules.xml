@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TouchTest.iml" filepath="$PROJECT_DIR$/TouchTest.iml" />
+      <module fileurl="file://D:\Projects\Android\TouchUITest\TouchTest.iml" filepath="D:\Projects\Android\TouchUITest\TouchTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TouchUITest.iml" filepath="$PROJECT_DIR$/TouchUITest.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\Projects\Android\TouchUITest\app\app.iml" filepath="D:\Projects\Android\TouchUITest\app\app.iml" />
     </modules>
   </component>
 </project>

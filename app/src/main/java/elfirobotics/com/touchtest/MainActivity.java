@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String YES_NO_DOES_NOT_KNOW = "io.elfix.extras.TOUCH_UI.YES_NO_DOES_NOT_KNOW";
     public static final String LIST_OF_VALUES = "io.elfix.extras.TOUCH_UI.LIST_OF_VALUES";
     public static final String VALUES = "io.elfix.extras.TOUCH_UI.LIST_OF_VALUES.VALUES";
+    public static final String CHECK_IN_CHECK_OUT = "io.elfix.extras.TOUCH_UI.CHECK_IN_CHECK_OUT";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +58,18 @@ public class MainActivity extends AppCompatActivity {
                 notifyAttendanceIntent.putExtra("face_reco_name", ((EditText)findViewById(R.id.edit_face_reco_name)).getText().toString());
                 notifyAttendanceIntent.putExtra("schedule_id", Integer.valueOf(((EditText)findViewById(R.id.edit_schedule_id)).getText().toString()));
                 sendBroadcast(notifyAttendanceIntent);
+            }
+        });
+
+        findViewById(R.id.button_checkin_checkout).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ACTION);
+                intent.putExtra(TYPE, CHECK_IN_CHECK_OUT);
+                intent.putExtra("face_reco_name", ((EditText)findViewById(R.id.edit_face_reco_name)).getText().toString());
+                intent.putExtra("schedule_id", Integer.valueOf(((EditText)findViewById(R.id.edit_schedule_id)).getText().toString()));
+
+                sendBroadcast(intent);
             }
         });
     }

@@ -42,5 +42,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/button_registration"
         android:text="Registrate"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_checkin_checkout"
+        android:text="CheckIn CheckOut Employee"/>
 
 </LinearLayout>
